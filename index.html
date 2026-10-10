@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+  Name: Ronald Hester Jr.
+  Date: 10.09.2026
+  CSC 372-01
+
+  This HTML file creates the structure for a TV show
+  gallery. Users can search for shows and view
+  information retrieved from the TVmaze API.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>TV Show Gallery</h1>
+        <p>Find information about your favorite TV shows!</p>
+    </header>
+
+    <main>
+        <form id="search-form">
+            <label for="search-input">Search for a TV Show:</label>
+            <input type="search" id="search-input" placeholder="Enter show name">
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <section aria-label="TV show search results">
+            <div id="show-gallery"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Show information provided by
+            <a href="https://www.tvmaze.com/">TVmaze</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
